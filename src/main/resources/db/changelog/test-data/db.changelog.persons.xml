@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.9.xsd">
+
+
+    <changeSet  id="TESTDATA-PERSONS-000001"  author="lmonkiewicz">
+        <insert tableName="person">
+            <column name="id">1</column>
+            <column name="firstname">Jan</column>
+            <column name="lastname">Kowalski</column>
+            <column name="email">jan.kowalski@gmail.com</column>
+        </insert>
+        <insert tableName="person">
+            <column name="id">2</column>
+            <column name="firstname">Anna</column>
+            <column name="lastname">Nowak</column>
+            <column name="email">anna.nowak@gmail.com</column>
+        </insert>
+        <insert tableName="person">
+            <column name="id">3</column>
+            <column name="firstname">Zygmunt</column>
+            <column name="lastname">Podlaski</column>
+            <column name="email">zygmunt.podlaski@gmail.com</column>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>
